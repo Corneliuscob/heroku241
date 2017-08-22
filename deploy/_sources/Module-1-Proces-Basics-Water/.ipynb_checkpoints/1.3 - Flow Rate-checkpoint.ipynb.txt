@@ -214,15 +214,6 @@
     "\n",
     "$$ h = 2.08 \\space ft $$\n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {
-    "collapsed": true
-   },
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

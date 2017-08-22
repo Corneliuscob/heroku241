@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>1.1 – Unit Conversions &#8212; project1 1.0 documentation</title>
+    <title>1.10 – Practice Problem 1 &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -204,111 +204,115 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="1.1-–-Unit-Conversions">
-<h1>1.1 – Unit Conversions<a class="headerlink" href="#1.1-–-Unit-Conversions" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<div class="section" id="1.1.0-–-Learning-Objectives">
-<h2>1.1.0 – Learning Objectives<a class="headerlink" href="#1.1.0-–-Learning-Objectives" title="Permalink to this headline">¶</a></h2>
-<p>By the end of this section you should be able to:</p>
-<ol class="arabic simple">
-<li>Understand the importance of unit conversion.</li>
-<li>Understand the concept of a conversion factor.</li>
-<li>Convert a unit from one to the other.</li>
+<div class="section" id="1.10-–-Practice-Problem-1">
+<h1>1.10 – Practice Problem 1<a class="headerlink" href="#1.10-–-Practice-Problem-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Question">
+<h2>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h2>
+<p>Iron can be one of the most troublesome elements in water. It is very
+important to treat water containing large amounts of iron because as
+little as 0.3 ppm (parts per million) of iron can cause damage to
+manufacturing processes and the environment. The most common forms of
+iron found in water is ferrous, <span class="math">\(\text{Fe}^{+2}\)</span>, and ferric,
+<span class="math">\(\text{Fe}^{+3}\)</span>. The ferrous and ferric increases the acidity of
+the water. To treat the water, a base is needed such as sodium
+hydroxide, <span class="math">\(\text{NaOH}\)</span>. The base causes a titration with the
+ferrous titrating to iron hydroxide, <span class="math">\(\text{Fe(OH)}_2\)</span>, and ferric
+titrating to ferric hydroxide, <span class="math">\(\text{Fe(OH)}_3\)</span>. These hydroxides
+are not soluble in water and therefore can be extracted from the water.</p>
+<div class="math">
+\[\text{Fe}^{+2}_{(aq)} + 2 \space \text{NaOH}_{(aq)} \space \rightleftharpoons \space  \text{Fe(OH)}_{2 \space (s)} + 2 \space \text{Na}_{(aq)}^{+1}\]</div>
+<div class="math">
+\[\text{Fe}^{+3}_{(aq)} + 3 \space \text{NaOH}_{(aq)} \space \rightleftharpoons \space  \text{Fe(OH)}_{3 \space (s)} + 3 \space \text{Na}_{(aq)}^{+1}\]</div>
+<p>You are a chemical engineer working at a mining company. You&#8217;re boss
+wants you to make a material balance of the water treatment of iron so
+that he can analyze the cost of the treatment. You will be using a
+continuous stirred-tank reactor (CSTR). Assume that only ferrous is
+present in the water.</p>
+<div class="math">
+\[\text{Fe}^{+2}_{(aq)} + 2 \space \text{NaOH}_{(aq)} \space \rightleftharpoons \space  \text{Fe(OH)}_{2 \space (s)} + 2 \space \text{Na}_{(aq)}^{+1}\]</div>
+<p>There are two input streams and two out put streams. The first input
+stream, stream 1, contains water, ferrous at 500 ppm. The flowrate of
+water in this stream is 450 L/h. The second input stream, stream 2, is a
+3-molar solution of sodium hydroxide. The first output stream, stream 3,
+contains pure ferrous oxide. The second output stream, stream 4,
+contains all the water that entered the system, the sodium and the legal
+amount of iron in the water at 0.1 ppm.</p>
+<ol class="loweralpha simple">
+<li>Draw and label the body flow diagram (BFD).</li>
+<li>Perform a degree of freedom analysis.</li>
 </ol>
 </div>
-<div class="section" id="1.1.2-–-Conversion-Factors">
-<h2>1.1.2 – Conversion Factors<a class="headerlink" href="#1.1.2-–-Conversion-Factors" title="Permalink to this headline">¶</a></h2>
-<p><strong>Conversion factors</strong> are ratios between two expressions of the same
-quantity. For an example:</p>
-<div class="math">
-\[\frac{1 cm}{10 mm} \quad \text{(1 centimeter per 10 millimeters)}\]</div>
-<p>or</p>
-<div class="math">
-\[\frac{1 kg^2}{1,000,000 g^2} \quad \text{(1 kilogram squared per 1,000,000 grams squared)}\]</div>
-<p>or</p>
-<div class="math">
-\[\frac{1 m^3}{1,000,000,000 m m^3} \quad \text{(1 cubic meter per 1,000,000,000 cubic millimeters)}\]</div>
-</div>
-<div class="section" id="1.1.4-–-Problem-Statement">
-<h2>1.1.4 – Problem Statement<a class="headerlink" href="#1.1.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
-<p>Suppose the average house in Vancouver uses 342 gallons of water per
-day. How many <span class="math">\(cm^3\)</span> of water per second is used on average? What
-are your conversion factors?</p>
-</div>
 <div class="section" id="Answer">
-<h3>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h3>
-<div class="nbinput docutils container">
+<h2>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a)-Draw-and-label-the-body-flow-diagram-(BFD).">
+<h3>a) Draw and label the body flow diagram (BFD).<a class="headerlink" href="#a)-Draw-and-label-the-body-flow-diagram-(BFD)." title="Permalink to this headline">¶</a></h3>
+<p>First, let’s draw the basic outline of the BFD</p>
+<div class="figure">
+<img alt="" src="../_images/CSTR-1.svg" /></div>
+<p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
+(<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
+<p>Now let’s turn everything into a molar basis and fill out our BFD.</p>
+<div class="math">
+\[\dot{V}_{H_2 O} = 450 \frac{L}{h}\]</div>
+<div class="math">
+\[\dot{n}_{H_2 O} = 450 \space \frac{L}{h} \times 1,000 \space \frac{g}{L} \times 0.0556 \space \frac{mol}{g} = 25,000 \space \frac{mol}{h}\]</div>
+<p>Since we know that the ferrous in stream 1 is 500 ppm and the mole
+fractions of stream 1 must add to one, we find that:</p>
+<div class="math">
+\[y_{(1, Fe^{+2})} = 0.0005\]</div>
+<div class="math">
+\[y_{(1, H_2 O)} = 1 - y_{(1, Fe^{+2})} = 1 - 0.0005 = 0.9995\]</div>
+<p>and that</p>
+<div class="math">
+\[\dot{n}_1 = \frac{\dot{n}_{H_2 O}}{y_{(1, H_2 O)}} = \frac{25,000 \space \frac{mol}{h}}{0.9995 } = 25.01 \space \frac{kmol}{h}\]</div>
+<p>Since we know that only pure ferrous oxide exists stream there we find
+that:</p>
+<div class="math">
+\[y_{(1, Fe(OH)_2)} = 1\]</div>
+<p>We can now label our BFD to the fullest extent without solving the
+problem.</p>
+<div class="figure">
+<img alt="" src="../_images/CSTR-2.svg" /></div>
+<p>Attribution: Said Zaid-Alkailani &amp; UBC [CC BY 4.0 de
+(<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
+</div>
+<div class="section" id="b)-Perform-a-degree-of-freedom-analysis.">
+<h3>b) Perform a degree of freedom analysis.<a class="headerlink" href="#b)-Perform-a-degree-of-freedom-analysis." title="Permalink to this headline">¶</a></h3>
+<p>We have 8 unknown labeled variables but since we can deduce two of the
+mole fractions from the others, let’s just say we have 6 unknown labeled
+variables. We will use the atomic species balance for this question. The
+degree of freedom analysis for a atomic species balance is:</p>
+<div class="math">
+\[DOF = \text{Unknown variables} - \text{independent atomic species balance} - \text{molecular balances on independent nonreactive species} -\text{other equations relating unknown variables}\]</div>
+<p>We know that:</p>
+<div class="math">
+\[\text{Unknown variables} = 6\]</div>
+<div class="math">
+\[\text{independent atomic species balance} = 4 \space (H, \space Fe, \space Na, \text{and} \space O)\]</div>
+<div class="math">
+\[\text{molecular balances on independent nonreactive species} = 0\]</div>
+<div class="math">
+\[\text{other equations relating unknown variables} = 2\]</div>
+<p>Where other equations relating unknow variables is</p>
+<div class="math">
+\[y_{(4, Fe^{+2})} = 0.0001\]</div>
+<p>and that <span class="math">\(NaOH\)</span> is 3 moles per litre.</p>
+<div class="math">
+\[3 \space \frac{NaOH \space mol}{H_2 O \space l} \times \frac{ 1 \space l}{ 1,000 \space g} \times \frac{ 18 \space g}{1 \space mol \space H_2 O} = 0.054  \space \frac{NaOH \space mol}{H_2 O \space mol}\]</div>
+<div class="math">
+\[y_{(2, \space NaOH)} = \frac{0.054}{0.054  + 1} = 0.0512\]</div>
+<div class="math">
+\[\therefore \space DOF = 6 - 4 - 0 - 2 = 0\]</div>
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
-<span></span>In [1]:
+<span></span>In [ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
-<span></span>water_use = 342 # gallons/day
-
-seconds_per_day = 86400 # s/day
-litres_per_gallon = 3.78541 # l/gallon
-cub_m_per_litre = 0.001 # m^3/l
-cub_c_per_cub_m = 1000000 # cm^3/m^3
-
-water_use_1 = water_use*litres_per_gallon*cub_m_per_litre*cub_c_per_cub_m/seconds_per_day
-
-print(&quot;The average house uses&quot;,water_use_1,&quot;cm^3/s&quot;)
+<span></span>
 </pre></div>
 </div>
 </div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-The average house uses 14.983914583333332 cm^3/s
-</pre></div></div>
-</div>
-<p>The conversion factors are:</p>
-<div class="math">
-\[\frac{86400s}{1 day}\]</div>
-<div class="math">
-\[\frac{3.78541 litre}{1 gallon}\]</div>
-<div class="math">
-\[\frac{0.001 m^3}{1 litre}\]</div>
-<div class="math">
-\[\frac{1,000,000 cm^3}{1 m^3}\]</div>
-<p>Written out, this would look like:</p>
-<div class="math">
-\[\frac{342 \space gallons }{1\space day} \cdot  \frac{1\space day}{86400s} \cdot \frac{3.78541 litre}{1 gallon} \cdot \frac{0.001 m^3}{1 litre} \cdot \frac{1,000,000 cm^3}{1 m^3} =  14.983914583 \frac { cm^3}{s}\]</div>
-</div>
-</div>
-<div class="section" id="1.1.5-–-Problem-statement">
-<h2>1.1.5 – Problem statement<a class="headerlink" href="#1.1.5-–-Problem-statement" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
-<p>Despite the odds, the Kinger-Sporgan pipeline is being built to no
-environmental impact, which will soon supply BC and Washington state
-with 40,001 barrels of oil biweekly (including weekends). As an employee
-of Dusty Oil in Vancouver, you keep in contact with your colleagues in
-the United States and update them on the amount of oil being supplied.
-Since they use metric and you use the imperial system, what is the
-amount of oil transported, in metric?</p>
-<p><strong>Note</strong>: Use 1 oil barrel = 35 imperial gallons. Not US gallons.</p>
-<p>According to the back of our text,</p>
-<div class="math">
-\[1000 \space L = 220.83 \space \text{imperial gallons}\]</div>
-<p>Let&#8217;s find out how many litres are in an imperial gallon first:</p>
-<div class="math">
-\[1000 \space L \space \div \space 220.83 \space \text{imperial gallons} = 4.5283 \space \frac{L}{\text{imperial gallons}}\]</div>
-<p>Now we know that biweekly, the total amount of oil transported is:</p>
-<div class="math">
-\[40,001 \space barrels \space \times \space 35 \space 35 \space \frac{\text{imperial gallons}}{barrels} \times \space 4.5283 \space \frac{L}{\text{imperial gallons}} = 6339778 \space litres\]</div>
-<p>Let&#8217;s find how how many litres are transported in seconds. Since I don&#8217;t
-know how many seconds are in a fortnight off the top of my head:</p>
-<div class="math">
-\[14 \space days \space \times \space 24 \space \frac{hours}{day} \space \times \space 3600 \space \frac{seconds}{hour} = 1209600 \space seconds\]</div>
-<p>Finally, you can report that the total amount of oil transported, in
-metric units, is:</p>
-<div class="math">
-\[6339778 \space litres \div 1209600 \space seconds = 5.241 \space \frac{L}{s}\]</div>
 </div>
 </div>
 </div>
@@ -321,16 +325,11 @@ metric units, is:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">1.1 – Unit Conversions</a><ul>
-<li><a class="reference internal" href="#1.1.0-–-Learning-Objectives">1.1.0 – Learning Objectives</a></li>
-<li><a class="reference internal" href="#1.1.2-–-Conversion-Factors">1.1.2 – Conversion Factors</a></li>
-<li><a class="reference internal" href="#1.1.4-–-Problem-Statement">1.1.4 – Problem Statement</a><ul>
+<li><a class="reference internal" href="#">1.10 – Practice Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
-<li><a class="reference internal" href="#Answer">Answer</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#1.1.5-–-Problem-statement">1.1.5 – Problem statement</a><ul>
-<li><a class="reference internal" href="#Question">Question</a></li>
+<li><a class="reference internal" href="#Answer">Answer</a><ul>
+<li><a class="reference internal" href="#a)-Draw-and-label-the-body-flow-diagram-(BFD).">a) Draw and label the body flow diagram (BFD).</a></li>
+<li><a class="reference internal" href="#b)-Perform-a-degree-of-freedom-analysis.">b) Perform a degree of freedom analysis.</a></li>
 </ul>
 </li>
 </ul>
@@ -346,7 +345,7 @@ metric units, is:</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/Module-1-Proces-Basics-Water/1.1 - Unit Conversions.ipynb.txt"
+      <li><a href="../_sources/Module-1-Proces-Basics-Water/1.10 Practice Problem 1.ipynb.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -372,7 +371,7 @@ metric units, is:</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../_sources/Module-1-Proces-Basics-Water/1.1 - Unit Conversions.ipynb.txt"
+      <a href="../_sources/Module-1-Proces-Basics-Water/1.10 Practice Problem 1.ipynb.txt"
           rel="nofollow">Page source</a>
     </div>
 

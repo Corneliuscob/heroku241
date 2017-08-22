@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>1.1 – Unit Conversions &#8212; project1 1.0 documentation</title>
+    <title>5.11 - Practice Problem 7.57 &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -204,111 +204,109 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="1.1-–-Unit-Conversions">
-<h1>1.1 – Unit Conversions<a class="headerlink" href="#1.1-–-Unit-Conversions" title="Permalink to this headline">¶</a></h1>
-<hr class="docutils" />
-<div class="section" id="1.1.0-–-Learning-Objectives">
-<h2>1.1.0 – Learning Objectives<a class="headerlink" href="#1.1.0-–-Learning-Objectives" title="Permalink to this headline">¶</a></h2>
-<p>By the end of this section you should be able to:</p>
-<ol class="arabic simple">
-<li>Understand the importance of unit conversion.</li>
-<li>Understand the concept of a conversion factor.</li>
-<li>Convert a unit from one to the other.</li>
+<div class="section" id="5.11---Practice-Problem-7.57">
+<h1>5.11 - Practice Problem 7.57<a class="headerlink" href="#5.11---Practice-Problem-7.57" title="Permalink to this headline">¶</a></h1>
+<blockquote>
+<div><p>Cloth bag filters are used to remove particulate matter from the
+gases passing out through several process and boiler stacks in a
+large industrial plant. The bags become clogged and must be replaced
+frequently. Since they are quite expensive, rather than being
+discarded they are emptied, washed, and reused. In the washing
+process, a detergent solution with a specific gravity of 0.87 flows
+from a storage tank to a washing machine. The liquid effluent from
+the machine is pumped through a filter to remove dirt, and the
+cleaned detergent is recycled back to the storage tank.</p>
+<p>Detergent flows from the storage tank to the washing machine by
+gravity feed at a rate of 820 L/min. All pipes in the line have
+10.0-cm inner diameters. Friction losses are negligible in the line
+from the tank to the washing machine when the valve is fully opened,
+and <span class="math">\(\hat{F}\)</span> 56 J/kg in the return line, which includes the
+pump and filter.</p>
+</div></blockquote>
+<ul class="simple">
+<li>Calculate the value of the height required to provide the desired
+flow rate of detergent into the washing machine when the valve is
+fully opened.</li>
+<li>Suppose the pump has an efficiency of 75%; that is, it delivers 75%
+of its rated value as shaft work. What must the rated value (kW) of
+the pump be to return 600 L/min of detergent to the storage tank?</li>
+</ul>
+<div class="section" id="Preamble:">
+<h2>Preamble:<a class="headerlink" href="#Preamble:" title="Permalink to this headline">¶</a></h2>
+<p>This question may be found in the textbook with altered values. The
+textbook also contains a block flow diagram. We will also develop our
+own for situations where it is not given.</p>
+<ol class="arabic">
+<li><p class="first">Draw a diagram of the process taking place and write the relevant
+equation:</p>
+<div class="figure">
+<img alt="" src="../_images/q7.57.svg" /></div>
+<p>We will <strong>probably</strong> need the energy equations:</p>
+<div class="math">
+\[H = Q - W\]</div>
+<p>Since the problem statement specified gravity and since height is
+asked for, a breakdown of kinetic and potential energy will be
+considered as well.</p>
+<div class="math">
+\[E_{tot} = E_{sys} = E_k + E_p + U\]</div>
+<p>Because we&#8217;re given a flowrate and an area, we can assume that we
+will need the volumetric flowrate Equation.</p>
+<div class="math">
+\[Q = A\cdot v\]</div>
+<p>Regardless if we use all the equations, it does not hurt to have them
+written out.</p>
+</li>
+<li><p class="first">Add simplifications and assumptions</p>
+</li>
 </ol>
-</div>
-<div class="section" id="1.1.2-–-Conversion-Factors">
-<h2>1.1.2 – Conversion Factors<a class="headerlink" href="#1.1.2-–-Conversion-Factors" title="Permalink to this headline">¶</a></h2>
-<p><strong>Conversion factors</strong> are ratios between two expressions of the same
-quantity. For an example:</p>
+<ul class="simple">
+<li>We will assume there are no other factors affecting the energy of the
+system e.g <span class="math">\(U\)</span></li>
+<li>assume initial states in energy terms are zero eg <span class="math">\(E_{ki}= 0\)</span></li>
+</ul>
+<ol class="arabic simple" start="3">
+<li>List the known values and solve the equation(s). <strong>note:</strong> all values
+are converted to <strong>SI</strong> units</li>
+</ol>
+<ul>
+<li><p class="first"><span class="math">\(v = \frac{Q}{A} = \frac{0.013667\frac{m^3}{s}} {.0019635m^2}=6.96\frac{m}{s}\)</span>
+where A is the area in meters. Since we have found <span class="math">\(v\)</span>, We can
+now solve the energy balance. As energy is conserved and the
+assumption of zero as the initial state, we can simplify the energy
+equation to just <span class="math">\(E_k = E_p\)</span>. This breaks down into:</p>
 <div class="math">
-\[\frac{1 cm}{10 mm} \quad \text{(1 centimeter per 10 millimeters)}\]</div>
-<p>or</p>
+\[\frac{1}{2}mv^2 = mgh\]</div>
+</li>
+</ul>
+<p>At this point, it is ok to have thought of using the specific gravity,
+however; this is unecessary as the mass cancels out. Subbing in numbers
+and solving:</p>
 <div class="math">
-\[\frac{1 kg^2}{1,000,000 g^2} \quad \text{(1 kilogram squared per 1,000,000 grams squared)}\]</div>
-<p>or</p>
+\[h = \frac{v^2}{2g}\approx 2.5m\]</div>
+<ol class="arabic" start="4">
+<li><p class="first">Part 2: List the known values and solve the equation(s). As we
+progressed through the problem, we realize we don&#8217;t need the first
+law equation. That is ok; as we solve more of the problem we quickly
+realize what is needed.</p>
 <div class="math">
-\[\frac{1 m^3}{1,000,000,000 m m^3} \quad \text{(1 cubic meter per 1,000,000,000 cubic millimeters)}\]</div>
-</div>
-<div class="section" id="1.1.4-–-Problem-Statement">
-<h2>1.1.4 – Problem Statement<a class="headerlink" href="#1.1.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
-<p>Suppose the average house in Vancouver uses 342 gallons of water per
-day. How many <span class="math">\(cm^3\)</span> of water per second is used on average? What
-are your conversion factors?</p>
-</div>
-<div class="section" id="Answer">
-<h3>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h3>
-<div class="nbinput docutils container">
+\[P_{req} = \dot{m}gh + \dot{m}\hat{F}\]</div>
+</li>
+</ol>
+<p>Conversely, it is now we need the Specific gravity</p>
+<div class="math">
+\[870\frac{kg}{m^3} * 0.01366\frac{m^3}{s}(*9.81\frac{m}{s^2}*2.5m + 56J/Kg)= 957.46 kW\]</div>
+<p>At 75% efficiency, this becomes</p>
+<div class="math">
+\[\frac{957.46}{.75}=1276.620803 kW\]</div>
+<div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
-<span></span>In [1]:
+<span></span>In [ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
-<span></span>water_use = 342 # gallons/day
-
-seconds_per_day = 86400 # s/day
-litres_per_gallon = 3.78541 # l/gallon
-cub_m_per_litre = 0.001 # m^3/l
-cub_c_per_cub_m = 1000000 # cm^3/m^3
-
-water_use_1 = water_use*litres_per_gallon*cub_m_per_litre*cub_c_per_cub_m/seconds_per_day
-
-print(&quot;The average house uses&quot;,water_use_1,&quot;cm^3/s&quot;)
+<span></span>
 </pre></div>
 </div>
-</div>
-<div class="nboutput nblast docutils container">
-<div class="prompt empty docutils container">
-</div>
-<div class="output_area docutils container">
-<div class="highlight"><pre>
-The average house uses 14.983914583333332 cm^3/s
-</pre></div></div>
-</div>
-<p>The conversion factors are:</p>
-<div class="math">
-\[\frac{86400s}{1 day}\]</div>
-<div class="math">
-\[\frac{3.78541 litre}{1 gallon}\]</div>
-<div class="math">
-\[\frac{0.001 m^3}{1 litre}\]</div>
-<div class="math">
-\[\frac{1,000,000 cm^3}{1 m^3}\]</div>
-<p>Written out, this would look like:</p>
-<div class="math">
-\[\frac{342 \space gallons }{1\space day} \cdot  \frac{1\space day}{86400s} \cdot \frac{3.78541 litre}{1 gallon} \cdot \frac{0.001 m^3}{1 litre} \cdot \frac{1,000,000 cm^3}{1 m^3} =  14.983914583 \frac { cm^3}{s}\]</div>
-</div>
-</div>
-<div class="section" id="1.1.5-–-Problem-statement">
-<h2>1.1.5 – Problem statement<a class="headerlink" href="#1.1.5-–-Problem-statement" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
-<p>Despite the odds, the Kinger-Sporgan pipeline is being built to no
-environmental impact, which will soon supply BC and Washington state
-with 40,001 barrels of oil biweekly (including weekends). As an employee
-of Dusty Oil in Vancouver, you keep in contact with your colleagues in
-the United States and update them on the amount of oil being supplied.
-Since they use metric and you use the imperial system, what is the
-amount of oil transported, in metric?</p>
-<p><strong>Note</strong>: Use 1 oil barrel = 35 imperial gallons. Not US gallons.</p>
-<p>According to the back of our text,</p>
-<div class="math">
-\[1000 \space L = 220.83 \space \text{imperial gallons}\]</div>
-<p>Let&#8217;s find out how many litres are in an imperial gallon first:</p>
-<div class="math">
-\[1000 \space L \space \div \space 220.83 \space \text{imperial gallons} = 4.5283 \space \frac{L}{\text{imperial gallons}}\]</div>
-<p>Now we know that biweekly, the total amount of oil transported is:</p>
-<div class="math">
-\[40,001 \space barrels \space \times \space 35 \space 35 \space \frac{\text{imperial gallons}}{barrels} \times \space 4.5283 \space \frac{L}{\text{imperial gallons}} = 6339778 \space litres\]</div>
-<p>Let&#8217;s find how how many litres are transported in seconds. Since I don&#8217;t
-know how many seconds are in a fortnight off the top of my head:</p>
-<div class="math">
-\[14 \space days \space \times \space 24 \space \frac{hours}{day} \space \times \space 3600 \space \frac{seconds}{hour} = 1209600 \space seconds\]</div>
-<p>Finally, you can report that the total amount of oil transported, in
-metric units, is:</p>
-<div class="math">
-\[6339778 \space litres \div 1209600 \space seconds = 5.241 \space \frac{L}{s}\]</div>
 </div>
 </div>
 </div>
@@ -321,18 +319,8 @@ metric units, is:</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">1.1 – Unit Conversions</a><ul>
-<li><a class="reference internal" href="#1.1.0-–-Learning-Objectives">1.1.0 – Learning Objectives</a></li>
-<li><a class="reference internal" href="#1.1.2-–-Conversion-Factors">1.1.2 – Conversion Factors</a></li>
-<li><a class="reference internal" href="#1.1.4-–-Problem-Statement">1.1.4 – Problem Statement</a><ul>
-<li><a class="reference internal" href="#Question">Question</a></li>
-<li><a class="reference internal" href="#Answer">Answer</a></li>
-</ul>
-</li>
-<li><a class="reference internal" href="#1.1.5-–-Problem-statement">1.1.5 – Problem statement</a><ul>
-<li><a class="reference internal" href="#Question">Question</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">5.11 - Practice Problem 7.57</a><ul>
+<li><a class="reference internal" href="#Preamble:">Preamble:</a></li>
 </ul>
 </li>
 </ul>
@@ -346,7 +334,7 @@ metric units, is:</p>
   <div role="note" aria-label="source link">
     <h3>This Page</h3>
     <ul class="this-page-menu">
-      <li><a href="../_sources/Module-1-Proces-Basics-Water/1.1 - Unit Conversions.ipynb.txt"
+      <li><a href="../_sources/Module-5-Energy-Balances/5.11 - Practice Problem 7.57.ipynb.txt"
             rel="nofollow">Show Source</a></li>
     </ul>
    </div>
@@ -372,7 +360,7 @@ metric units, is:</p>
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
       
       |
-      <a href="../_sources/Module-1-Proces-Basics-Water/1.1 - Unit Conversions.ipynb.txt"
+      <a href="../_sources/Module-5-Energy-Balances/5.11 - Practice Problem 7.57.ipynb.txt"
           rel="nofollow">Page source</a>
     </div>
 
