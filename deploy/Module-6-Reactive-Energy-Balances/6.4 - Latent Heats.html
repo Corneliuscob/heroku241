@@ -317,16 +317,16 @@ ideally, 1 mol of natural gas is:</p>
 <h3>Problem 2<a class="headerlink" href="#Problem-2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
 <h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
-<p>An equimolar liquid mixture of water and ethanol at 10 °C is fed
+<p>An equimolar liquid mixture of water and ethanol at 25 °C is fed
 continuously to a vessel in which the mixture is heated to 80 °C. The
 liquid product is 0.6 mole % E, and the vapor product is 99.4 mole % E.
 How much heat must be transferred to the mixture per g-mole of feed?
 (Bit unrealistic since almost all the ethanol would have been
-evaporated, but hey, question the world.)</p>
+evaporated, but hey, question the world).</p>
 </div>
 <div class="section" id="Answer">
 <h4>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h4>
-<p>ist all assumptions:</p>
+<p>List all assumptions:</p>
 <p>Basis: 1 mol feed</p>
 <p>Let us figure out the mass balance of this process first:</p>
 <div class="math">
@@ -393,23 +393,24 @@ evaporated, but hey, question the world.)</p>
 </tr>
 </tbody>
 </table>
-<p style="text-align:center"><p>References: H2O, liquid, 25 °C; Ethanol, liquid, 10 °C</p>
+<p style="text-align:center"><p>References: H2O, liquid, 25 °C; Ethanol, liquid, 25 °C</p>
 </p><p><strong>Note</strong>: We do not know the feed-stream pressure and so we assume that
 <span class="math">\(\Delta{H}\)</span> for the change from 1 atm to <span class="math">\(P_{feed}\)</span> is
 negligible, and since the process is not running at an unusually low
 temperature or high pressure, we neglect the effects of pressure on the
 enthalpy calculations. The tables used in the calculations are
 referenced here
-[(Ethanol)](<a class="reference external" href="https://en.wikipedia.org/wiki/Ethanol_(data_page">https://en.wikipedia.org/wiki/Ethanol_(data_page</a>) and here
+<a class="reference external" href="https://en.wikipedia.org/wiki/Ethanol_(data_page)">(Ethanol)</a> and
+here
 <a class="reference external" href="http://webbook.nist.gov/cgi/cbook.cgi?ID=C7732185&amp;Type=JANAFL&amp;Plot=on#JANAFL">(Water)</a>.</p>
 <div class="math">
-\[\hat{H_{1}} = \int\limits_{10C}^{80C}(C_p)_{H_2O_{(L)}}dT\]</div>
+\[\hat{H_{1}} = \int\limits_{25C}^{80C}(C_p)_{H_2O_{(L)}}dT\]</div>
 <div class="math">
-\[\hat{H_{2}} = \int\limits_{10C}^{80C}(C_p)_{Ethanol_{(L)}}dT\]</div>
+\[\hat{H_{2}} = \int\limits_{25C}^{80C}(C_p)_{Ethanol_{(L)}}dT\]</div>
 <div class="math">
-\[\hat{H_{3}} = \int\limits_{10C}^{100C}(C_p)_{H_2O_{(L)}}dT +(\Delta\hat{H})_{V,H_2O}(100C)+ \int\limits_{100C}^{80C}(C_p)_{H_2O_{(V)}}dT\]</div>
+\[\hat{H_{3}} = \int\limits_{25C}^{100C}(C_p)_{H_2O_{(L)}}dT +(\Delta\hat{H})_{V,H_2O}(100C)+ \int\limits_{100C}^{80C}(C_p)_{H_2O_{(V)}}dT\]</div>
 <div class="math">
-\[\hat{H_{4}} = \int\limits_{10C}^{100C}(C_p)_{Ethanol_{(L)}}dT +(\Delta\hat{H})_{V,Ethanol}(100C)+ \int\limits_{100C}^{80C}(C_p)_{Ethanol_{(V)}}dT\]</div>
+\[\hat{H_{4}} = \int\limits_{25C}^{100C}(C_p)_{Ethanol_{(L)}}dT +(\Delta\hat{H})_{V,Ethanol}(100C)+ \int\limits_{100C}^{80C}(C_p)_{Ethanol_{(V)}}dT\]</div>
 <p><strong>Final Solution</strong></p>
 <p>The energy balance is:</p>
 <div class="math">
