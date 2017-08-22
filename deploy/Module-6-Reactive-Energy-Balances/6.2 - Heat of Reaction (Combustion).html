@@ -276,8 +276,10 @@ atm.</p>
 <hr class="docutils" />
 <div class="section" id="6.2.5-–-Problem-Statement">
 <h2>6.2.5 – Problem Statement<a class="headerlink" href="#6.2.5-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Problem-1">
+<h3>Problem 1<a class="headerlink" href="#Problem-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
 <p>You are a chemical engineer at one of the test facilities for renewable
 energies. You are comparing ethanol&#8217;s rate of enthalpy change to the
 amount of <span class="math">\(C O_2\)</span> produced. You measure that
@@ -288,7 +290,7 @@ enthalpy change given</p>
 <p>Is the combustion of ethanol an exothermic or endothermic reaction?</p>
 </div>
 <div class="section" id="Answer">
-<h3>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h3>
+<h4>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h4>
 <p>First we need to convert the rate of <span class="math">\(C O_2\)</span> produced from a mass
 flow rate to a molar flow rate.</p>
 <div class="math">
@@ -303,6 +305,64 @@ method to solve for the rate of enthalpy change.</p>
 \[\Delta \dot{H} = \dot{\xi} \cdot \Delta \hat{H}_r = \bigg(2.841 \space \frac{mol}{s} \bigg) \cdot \bigg( -1369 \space \frac{kJ}{mol} \bigg) = -3889 \space \frac{kJ}{s}\]</div>
 <p>Since the rate of enthalpy change is negative, the combustion of ethanol
 is an exothermic reaction.</p>
+</div>
+</div>
+<div class="section" id="Problem-2">
+<h3>Problem 2<a class="headerlink" href="#Problem-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Question">
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
+<p>The heats of vaporization of n-butane and water at 25 °C are 19.2 kJ/mol
+and 44.0 kJ/mol, respectively. What is the standard heat of the reaction
+of</p>
+<div class="math">
+\[C_4H_{10} (l) + \frac{13}{2}O_2 (g) \longrightarrow 4 CO_2 (g) + 5 H_2O(v)\]</div>
+<p>Calculate <span class="math">\(\Delta{\dot{H}}\)</span> if 2400 mol/s of <span class="math">\(CO_2\)</span> is
+produced in this reaction and the reactants and products are all at 25
+°C.</p>
+</div>
+<div class="section" id="Answer">
+<h4>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h4>
+<p>First, let&#8217;s compare the given reaction (Reaction 2) with a known
+combustion reaction of n-butane (Reaction 1):</p>
+<ol class="arabic">
+<li><div class="first math">
+\[C_4H_{10} (g) + \frac{13}{2}O_2 (g) \longrightarrow 4 CO_2 (g) + 5 H_2O(l): \space \space \Delta{\hat{H}_{r1}} = -2878 \space kJ/mol\]</div>
+</li>
+<li><div class="first math">
+\[C_4H_{10} (l) + \frac{13}{2}O_2 (g) \longrightarrow 4 CO_2 (g) + 5 H_2O(v): \space \space \Delta{\hat{H}_{r2}} = ?\]</div>
+</li>
+</ol>
+<p>According to our comparison, we should first deduce what the states of
+the reactants and the products, and thier respective stoichiometric
+values, can tell us:</p>
+<ul class="simple">
+<li>The total enthalpy of the reactants in the second reaction is lower
+than the first reaction by the amount of the heat of vaporization of
+butane.</li>
+<li>The total enthalpy of the products in the second reaction is higher
+than the first reaction by 5 times the amount of the heat of
+vaporization of water.</li>
+</ul>
+<p>Deduction over, now we have the means to solve for the heat of reaction
+of the second reaction, based on our deduction and the heat of reaction
+value of the first equation. Let&#8217;s solve for the
+<span class="math">\(\Delta{\hat{H}_{r2}}\)</span>:</p>
+<div class="math">
+\[\quad \Delta \hat{H}_{r2} ^{\circ} = \quad \Delta \hat{H}_{r1} ^{\circ} + 5 \cdot \Delta{\hat{H}_{H_2O}} - (-\Delta{\hat{H}_{butane}})\]</div>
+<div class="math">
+\[\quad \Delta \hat{H}_{r2} ^{\circ} = \quad \Delta \hat{H}_{r1} ^{\circ} + 5 \cdot \Delta{\hat{H}_{v,H_2O}} + \Delta{\hat{H}_{v,butane}}\]</div>
+<div class="math">
+\[\quad \Delta \hat{H}_{r2} ^{\circ} = -2878 + 5(44) + 19.2 = -2639 \space kJ/mol\]</div>
+<p>Now that we know the heat of reaction per mol of product produced, we
+need to find out the total heat. Let&#8217;s find the extent of reaction using
+the 2400 mol/s given:</p>
+<div class="math">
+\[\dot{\xi} = \frac{n_{A,r}}{\mid \nu_A \mid} = \frac{2400 \space mol/s}{4} = 600 \space mol/s\]</div>
+<p>NOW we can solve for the <span class="math">\(\Delta{\dot{H}}\)</span> of the reaction:</p>
+<div class="math">
+\[\Delta{\dot{H}} = \dot{\xi} \cdot \Delta{\hat{H}_{r2}} = 600 \space mol/s \cdot -2639 \space kJ/mol = -1.58 \times 10^6 \space kJ/s\]</div>
+<p>Tedious? Aye. Complicated? Nay. Keep at it and continue practicing and
+you will be good in no time.</p>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
 <span></span>In [ ]:
@@ -311,6 +371,7 @@ is an exothermic reaction.</p>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -330,8 +391,16 @@ is an exothermic reaction.</p>
 <li><a class="reference internal" href="#6.2.2-–-Exothermic-and-Endothermic">6.2.2 – Exothermic and Endothermic</a></li>
 <li><a class="reference internal" href="#6.2.4-–-Important-Terms-and-Observations">6.2.4 – Important Terms and Observations</a></li>
 <li><a class="reference internal" href="#6.2.5-–-Problem-Statement">6.2.5 – Problem Statement</a><ul>
+<li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Problem-2">Problem 2</a><ul>
+<li><a class="reference internal" href="#Question">Question</a></li>
+<li><a class="reference internal" href="#Answer">Answer</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
