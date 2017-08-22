@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "launching a static site for chbe241",
   "main": "index.js",
+  "engines":{
+    "node": "6.11.2"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "index.js "
@@ -11,5 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.15.4"
-  }
+  },
+  "repository": "https://git.heroku.com/chbe241.git"
+
 }
