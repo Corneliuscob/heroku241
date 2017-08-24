@@ -259,8 +259,10 @@ rotate which will inform you on its pressure.</p>
 <hr class="docutils" />
 <div class="section" id="4.4.4-–-Problem-Statement">
 <h2>4.4.4 – Problem Statement<a class="headerlink" href="#4.4.4-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Problem-1">
+<h3>Problem 1<a class="headerlink" href="#Problem-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
 <p>An open-end manometer, shown below is used to measure the pressure of
 the stream. If <span class="math">\(d_1 = 1.0 \space m\)</span> and <span class="math">\(h = 0.7 \space m\)</span>,
 what is the absolute pressure at <span class="math">\(P_1\)</span>?</p>
@@ -268,7 +270,7 @@ what is the absolute pressure at <span class="math">\(P_1\)</span>?</p>
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
 </div>
 <div class="section" id="Answer">
-<h3>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h3>
+<h4>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h4>
 <p>Sine we know <span class="math">\(d_1 = 1.0 \space m\)</span> and <span class="math">\(h = 0.7 \space m\)</span>, we
 can solve for <span class="math">\(d_2\)</span></p>
 <div class="math">
@@ -286,6 +288,60 @@ we can ignore <span class="math">\(\rho_2\)</span>.</p>
 \[P_1 =  101,300 \space Pa  + (1,000 \space kg/m^3) (9.81 \space m/s^2) (0.7 \space m) - (950 \space kg/m^3) (9.81 \space m/s^2) (1 \space m)\]</div>
 <div class="math">
 \[P_1 =  98,800 \space Pa\]</div>
+</div>
+</div>
+<div class="section" id="Problem-2">
+<h3>Problem 2<a class="headerlink" href="#Problem-2" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="Question">
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
+<div class="figure">
+<img alt="" src="../_images/manometer_problem_21.svg" /></div>
+<p>A U-tube manometer is connected to a closed tank. The air pressure
+inside the tank is 0.50 psi and the liquid is oil (<span class="math">\(\gamma\)</span> = 54.0
+<span class="math">\(lb/ft^3\)</span>, S.G. = <span class="math">\(3.05\)</span>). The pressure at point A is 2.00
+psi. Find</p>
+<ol class="loweralpha simple">
+<li>the depth of oil</li>
+<li>the reading <span class="math">\(h\)</span> on the manometer.</li>
+</ol>
+<p><strong>Note:</strong> that the 2&#8217; above the 2. does not mean 2 prime, it denotes 2
+feet.</p>
+</div>
+<div class="section" id="Answer">
+<h4>Answer<a class="headerlink" href="#Answer" title="Permalink to this headline">¶</a></h4>
+<div class="math">
+\[P_1 = P_{air} = 0.5 \space psi\]</div>
+<div class="math">
+\[P_1 - P_2 =  (\rho_f - \rho) g h \quad \text{(Differential Manometer Equation)}\]</div>
+<div class="math">
+\[P_1 - P_2 = -\gamma(h_2 - h_1)\]</div>
+<p><strong>a)</strong> Note: We are using (1.) as the reference point.</p>
+<div class="math">
+\[P_{1.} - P_A = -\gamma_{oil}(-Z - 0)\]</div>
+<div class="math">
+\[0.5 \space psi - 2.0 psi = -54.0 lb/ft^3 \cdot (-Z)\]</div>
+<p>Notice that we need to convert all units to a single uniform unit:</p>
+<div class="math">
+\[-1.5 psi \times 144 \frac{in^2}{ft^2} = -54.0 lb/ft^3 \cdot (-Z)\]</div>
+<div class="math">
+\[Z = 4.00 ft\]</div>
+<p><strong>b)</strong> Note: We are using (1.) as the reference point.</p>
+<div class="math">
+\[P_{2.} - P_A = -\gamma_{oil}(-(Z+2') - (-4))\]</div>
+<div class="math">
+\[P_{2.} - 2.0 psi \times \frac{in^2}{ft^2} = -54.0 lb/ft^3 \cdot (-(4+2)+4)\]</div>
+<div class="math">
+\[P_{2.} - 2.0 psi \times \frac{in^2}{ft^2} = -54.0 lb/ft^3 \cdot 2\]</div>
+<div class="math">
+\[P_{2.} = 396 \space lb/ft^3\]</div>
+<div class="math">
+\[P_{3.} - P_2 = -\gamma_{oil}(-(6-h) - (-4-2))\]</div>
+<div class="math">
+\[S.G. = \frac{\gamma_{oil}}{\gamma_{water}}\]</div>
+<div class="math">
+\[0-396 = -3.05(62.4)(h)\]</div>
+<div class="math">
+\[h = 2.08 \space ft\]</div>
 <div class="nbinput nblast docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
 <span></span>In [ ]:
@@ -294,6 +350,7 @@ we can ignore <span class="math">\(\rho_2\)</span>.</p>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
 <span></span>
 </pre></div>
+</div>
 </div>
 </div>
 </div>
@@ -317,8 +374,16 @@ we can ignore <span class="math">\(\rho_2\)</span>.</p>
 </ul>
 </li>
 <li><a class="reference internal" href="#4.4.4-–-Problem-Statement">4.4.4 – Problem Statement</a><ul>
+<li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
 <li><a class="reference internal" href="#Answer">Answer</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#Problem-2">Problem 2</a><ul>
+<li><a class="reference internal" href="#Question">Question</a></li>
+<li><a class="reference internal" href="#Answer">Answer</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

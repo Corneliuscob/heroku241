@@ -42,169 +42,7 @@
         <div class="bodywrapper">
           <div class="body" role="main">
             
-  
-<style>
-/* CSS for nbsphinx extension */
-
-/* remove conflicting styling from Sphinx themes */
-div.nbinput,
-div.nbinput div.prompt,
-div.nbinput div.input_area,
-div.nbinput div[class*=highlight],
-div.nbinput div[class*=highlight] pre,
-div.nboutput,
-div.nbinput div.prompt,
-div.nbinput div.output_area,
-div.nboutput div[class*=highlight],
-div.nboutput div[class*=highlight] pre {
-    background: none;
-    border: none;
-    padding: 0 0;
-    margin: 0;
-    box-shadow: none;
-}
-
-/* avoid gaps between output lines */
-div.nboutput div[class*=highlight] pre {
-    line-height: normal;
-}
-
-/* input/output containers */
-div.nbinput,
-div.nboutput {
-    display: -webkit-flex;
-    display: flex;
-    align-items: flex-start;
-    margin: 0;
-    width: 100%;
-}
-@media (max-width: 540px) {
-    div.nbinput,
-    div.nboutput {
-        flex-direction: column;
-    }
-}
-
-/* input container */
-div.nbinput {
-    padding-top: 5px;
-}
-
-/* last container */
-div.nblast {
-    padding-bottom: 5px;
-}
-
-/* input prompt */
-div.nbinput div.prompt pre {
-    color: #303F9F;
-}
-
-/* output prompt */
-div.nboutput div.prompt pre {
-    color: #D84315;
-}
-
-/* all prompts */
-div.nbinput div.prompt,
-div.nboutput div.prompt {
-    min-width: 8ex;
-    padding-top: 0.4em;
-    padding-right: 0.4em;
-    text-align: right;
-    flex: 0;
-}
-@media (max-width: 540px) {
-    div.nbinput div.prompt,
-    div.nboutput div.prompt {
-        text-align: left;
-        padding: 0.4em;
-    }
-    div.nboutput div.prompt.empty {
-        padding: 0;
-    }
-}
-
-/* disable scrollbars on prompts */
-div.nbinput div.prompt pre,
-div.nboutput div.prompt pre {
-    overflow: hidden;
-}
-
-/* input/output area */
-div.nbinput div.input_area,
-div.nboutput div.output_area {
-    padding: 0.4em;
-    -webkit-flex: 1;
-    flex: 1;
-    overflow: auto;
-}
-@media (max-width: 540px) {
-    div.nbinput div.input_area,
-    div.nboutput div.output_area {
-        width: 100%;
-    }
-}
-
-/* input area */
-div.nbinput div.input_area {
-    border: 1px solid #cfcfcf;
-    border-radius: 2px;
-    background: #f7f7f7;
-}
-
-/* override MathJax center alignment in output cells */
-div.nboutput div[class*=MathJax] {
-    text-align: left !important;
-}
-
-/* override sphinx.ext.pngmath center alignment in output cells */
-div.nboutput div.math p {
-    text-align: left;
-}
-
-/* standard error */
-div.nboutput div.output_area.stderr {
-    background: #fdd;
-}
-
-/* ANSI colors */
-.ansi-black-fg { color: #3E424D; }
-.ansi-black-bg { background-color: #3E424D; }
-.ansi-black-intense-fg { color: #282C36; }
-.ansi-black-intense-bg { background-color: #282C36; }
-.ansi-red-fg { color: #E75C58; }
-.ansi-red-bg { background-color: #E75C58; }
-.ansi-red-intense-fg { color: #B22B31; }
-.ansi-red-intense-bg { background-color: #B22B31; }
-.ansi-green-fg { color: #00A250; }
-.ansi-green-bg { background-color: #00A250; }
-.ansi-green-intense-fg { color: #007427; }
-.ansi-green-intense-bg { background-color: #007427; }
-.ansi-yellow-fg { color: #DDB62B; }
-.ansi-yellow-bg { background-color: #DDB62B; }
-.ansi-yellow-intense-fg { color: #B27D12; }
-.ansi-yellow-intense-bg { background-color: #B27D12; }
-.ansi-blue-fg { color: #208FFB; }
-.ansi-blue-bg { background-color: #208FFB; }
-.ansi-blue-intense-fg { color: #0065CA; }
-.ansi-blue-intense-bg { background-color: #0065CA; }
-.ansi-magenta-fg { color: #D160C4; }
-.ansi-magenta-bg { background-color: #D160C4; }
-.ansi-magenta-intense-fg { color: #A03196; }
-.ansi-magenta-intense-bg { background-color: #A03196; }
-.ansi-cyan-fg { color: #60C6C8; }
-.ansi-cyan-bg { background-color: #60C6C8; }
-.ansi-cyan-intense-fg { color: #258F8F; }
-.ansi-cyan-intense-bg { background-color: #258F8F; }
-.ansi-white-fg { color: #C5C1B4; }
-.ansi-white-bg { background-color: #C5C1B4; }
-.ansi-white-intense-fg { color: #A1A6B2; }
-.ansi-white-intense-bg { background-color: #A1A6B2; }
-
-.ansi-bold { font-weight: bold; }
-</style>
-<div class="section" id="3.6-–-Splitter">
+  <div class="section" id="3.6-–-Splitter">
 <h1>3.6 – Splitter<a class="headerlink" href="#3.6-–-Splitter" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
 <div class="section" id="3.6.0-–-Learning-Objectives">
@@ -232,18 +70,18 @@ are needed because the streams are only there to redirect mass.</p>
 <p><img alt="Figure 1." src="../_images/splitter_diagram_3.svg" /></p>
 <div style="text-align:center"><p>Figure 1.</p>
 </div><p>Figure 1. is the diagram for a splitter, in this case for a stream with
-toluene and nitrogen. A splitter is characterized with a single input,
+toluene and nitrogen? A splitter is characterized with a single input,
 followed by 2 or more product streams ** all with the same composition
 as the feed stream.** These streams usually also have the same state
 of matter as the feed stream.</p>
 <div class="section" id="Noteworthy:">
 <h3>Noteworthy:<a class="headerlink" href="#Noteworthy:" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>There is no mass/volumteric/molar flow rate for the fresh feed. In
+<li>There is no mass/volumetric/molar flow rate for the fresh feed. In
 this case, we would need to assign a random value to it, such as
-100kg/hr, or deduce it from the product flow streams. <span class="math">\($\)</span>$</li>
+100kg/hr, or deduce it from the product flow streams.</li>
 <li>Remember we need to convert the mass fractions to actual masses
-before we can add or subtract anything. <span class="math">\($\)</span>$</li>
+before we can add or subtract anything.</li>
 <li>Not all splitter processes are split 50/50. Be careful not to make
 this assumption when dealing with unlabelled streams.</li>
 </ul>
@@ -254,18 +92,17 @@ this assumption when dealing with unlabelled streams.</li>
 <h2>3.6.3 – Steps to solve<a class="headerlink" href="#3.6.3-–-Steps-to-solve" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>If the input stream does not have a flow rate listed in the question
-or the diagram, assume a mass or volumteric flow rate of a random
-number, preferrably a mass flow rate with a nice round number like
-100 <span class="math">\(kg/h\)</span>. <span class="math">\($\)</span>$</li>
-<li>Draw and label the flow chart based on the question. <span class="math">\($\)</span>$</li>
+or the diagram, assume a mass or volumetric flow rate of a random
+number, preferably a mass flow rate with a nice round number like 100
+<span class="math">\(kg/h\)</span>.</li>
+<li>Draw and label the flow chart based on the question.</li>
 <li>Write expressions for the quantities requested in the problem
 statement. (e.g. <span class="math">\(m_3\)</span> = <span class="math">\(m_{B3}\)</span> + <span class="math">\(m_{T3}\)</span>,
 <span class="math">\(x_B\)</span> = <span class="math">\(m_{B3}/m_3\)</span>). The expressions should be written
-to help in solving for the missing parameters of the process.
-<span class="math">\($\)</span>$</li>
+to help in solving for the missing parameters of the process.</li>
 <li>Convert all mixed units to one uniform units, such as converting all
-mass fractions into mass fow rates. In most cases, it would be
-converting all the units to masses. <span class="math">\($\)</span>$</li>
+mass fractions into mass flow rates. In most cases, it would be
+converting all the units to masses.</li>
 <li><strong>Do the algebra.</strong></li>
 </ol>
 <hr class="docutils" />
@@ -281,7 +118,7 @@ to get Input = Output).</p>
 <div class="math">
 \[x_{Total \space Stream} = 100 \space \frac{kg}{hr} + 50 \space \frac{kg}{hr} = 150 \space \frac{kg}{hr}\]</div>
 </li>
-<li><p class="first">Now that we know the total flow rates in each streams, we can use the
+<li><p class="first">Now that we know the total flow rates in each stream, we can use the
 mass fractions to find the flow rates of each component in the
 product stream.</p>
 </li>
@@ -312,16 +149,6 @@ subtract)</p>
 </ul>
 <div class="math">
 \[Fresh \space feed_{Nitrogen} = 73.5 \frac{kg}{hr} - 49 \frac{kg}{hr} = 24.5 \frac{kg}{hr}\]</div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none"><div class="highlight"><pre>
-<span></span>In [ ]:
-</pre></div>
-</div>
-<div class="input_area highlight-ipython3"><div class="highlight"><pre>
-<span></span>
-</pre></div>
-</div>
-</div>
 </div>
 </div>
 </div>

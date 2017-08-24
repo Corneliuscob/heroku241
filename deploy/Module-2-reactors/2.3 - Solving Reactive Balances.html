@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>2.3 – Solving Reactive Balances Indepth &#8212; project1 1.0 documentation</title>
+    <title>2.3 – Solving Reactive Balances In-depth &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -204,44 +204,36 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="2.3-–-Solving-Reactive-Balances-Indepth">
-<h1>2.3 – Solving Reactive Balances Indepth<a class="headerlink" href="#2.3-–-Solving-Reactive-Balances-Indepth" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="2.3.0-Learning-Objectives">
-<h2>2.3.0-Learning Objectives<a class="headerlink" href="#2.3.0-Learning-Objectives" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="2.3-–-Solving-Reactive-Balances-In-depth">
+<h1>2.3 – Solving Reactive Balances In-depth<a class="headerlink" href="#2.3-–-Solving-Reactive-Balances-In-depth" title="Permalink to this headline">¶</a></h1>
+<hr class="docutils" />
+<div class="section" id="2.3.0-–-Learning-Objectives">
+<h2>2.3.0 – Learning Objectives<a class="headerlink" href="#2.3.0-–-Learning-Objectives" title="Permalink to this headline">¶</a></h2>
 <p>By the end of this section you should be able to:</p>
 <ol class="arabic simple">
-<li>Solve simpe reactive balances using the molecular and atomic reactive
-balances.</li>
+<li>Solve simple reactive balances using the molecular and atomic
+reactive balances.</li>
 </ol>
 </div>
-<div class="section" id="2.3.1-Introduction">
-<h2>2.3.1-Introduction<a class="headerlink" href="#2.3.1-Introduction" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div>We will solve the example in the diagram 4.71 using the molecular
-spcies and atomic species balance. Python will be implemented to
-perform calculations. This section goes in-depth of te logic used to
-solve the problem that is adressed before.</div></blockquote>
-</div>
-<div class="section" id="2.3.2-Problem-statement">
-<h2>2.3.2-Problem statement<a class="headerlink" href="#2.3.2-Problem-statement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="2.3.2-–-Problem-statement">
+<h2>2.3.2 – Problem statement<a class="headerlink" href="#2.3.2-–-Problem-statement" title="Permalink to this headline">¶</a></h2>
 <p>Recall the block diagram in figure 4.7-1</p>
 <div class="math">
-\[C_2H_6 \rightarrow C_2H_4 + H_2\]</div>
+\[C_2H_6 \longrightarrow C_2H_4 + H_2\]</div>
 <div class="figure">
 <img alt="" src="Module-2-reactors/../figures/Module-2/ethane-reaction.png" />
 </div>
 <p>What are the <strong>mol flows</strong> of the exit streams of ethane <span class="math">\(C_6H_6\)</span>
 and ethylene <span class="math">\(C_4H_4\)</span>?</p>
 </div>
-<div class="section" id="2.3.3-Solving-using-the-molecular-species-balance">
-<h2>2.3.3-Solving using the molecular species balance<a class="headerlink" href="#2.3.3-Solving-using-the-molecular-species-balance" title="Permalink to this headline">¶</a></h2>
-<blockquote>
-<div><p>First, we <strong>identify our molecular species</strong>; for us, this is
-Hydrogen, Ethane and Ethylene.</p>
-<p>Next, we <strong>write out their respective balance equations</strong>. Note how
-the diagram 4.7-1 only shows the <strong>output</strong> variables
+<hr class="docutils" />
+<div class="section" id="2.3.3-–-Solving-using-the-molecular-species-balance">
+<h2>2.3.3 – Solving using the molecular species balance<a class="headerlink" href="#2.3.3-–-Solving-using-the-molecular-species-balance" title="Permalink to this headline">¶</a></h2>
+<p>First, we <strong>identify our molecular species</strong>; for us, this is Hydrogen,
+Ethane and Ethylene.</p>
+<p>Next, we <strong>write out their respective balance equations</strong>. Note how the
+diagram 4.7-1 only shows the <strong>output</strong> variables
 (<span class="math">\(\dot{n_1},\dot{n_2}\)</span>)</p>
-</div></blockquote>
 <div class="math">
 \[C_2H_6 balance: 100 \frac{kmol}{min}_{input} =\dot{n_1}\frac{kmol}{min}_{Output} + C_2H_{6Consumed}\]</div>
 <div class="math">
@@ -271,8 +263,9 @@ respectively.</p>
 <div class="math">
 \[C_2H_4 balance: C_2H_{4generated} = \dot{n_2}\frac{kmol}{min}_{Output} = 40\frac{kmol}{min}C_2H_{4generated}\]</div>
 </div>
-<div class="section" id="2.3.4-Solving-using-the-Atomic-species-balance">
-<h2>2.3.4-Solving using the Atomic species balance<a class="headerlink" href="#2.3.4-Solving-using-the-Atomic-species-balance" title="Permalink to this headline">¶</a></h2>
+<hr class="docutils" />
+<div class="section" id="2.3.4-–-Solving-using-the-Atomic-species-balance">
+<h2>2.3.4 – Solving using the Atomic species balance<a class="headerlink" href="#2.3.4-–-Solving-using-the-Atomic-species-balance" title="Permalink to this headline">¶</a></h2>
 <p>Let&#8217;s recall the Atomic balances:</p>
 <div class="math">
 \[Carbon (C)  \space  balance: Input = Output\]</div>
@@ -292,7 +285,8 @@ molecule? For example, there are 2 carbon atoms for every 1 ethane
 molecule.</p>
 <p>The carbon balance becomes:</p>
 <div class="math">
-\[ \begin{align}\begin{aligned}C_2H_{6input}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}  = C_2H_{6output}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}} + C_2H_{4output}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}\\The hydrogen balance becomes:\end{aligned}\end{align} \]</div>
+\[C_2H_{6input}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}  = C_2H_{6output}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}} + C_2H_{4output}*\frac{2C\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}\]</div>
+<p>The hydrogen balance becomes:</p>
 <div class="math">
 \[C_2H_{6input}*\frac{6H\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}  = C_2H_{6output}*\frac{6H\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}} + C_2H_{4output}*\frac{4H\frac{kmol}{min}}{1C_2H_6\frac{kmol}{min}}+H_{2output}*\frac{2H\frac{kmol}{min}}{1H_2\frac{kmol}{min}}\]</div>
 <p>Note from diagram 4.7-1, the input and output values are substituted for
@@ -349,12 +343,11 @@ The value of ethylene is 40kmol/min
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">2.3 – Solving Reactive Balances Indepth</a><ul>
-<li><a class="reference internal" href="#2.3.0-Learning-Objectives">2.3.0-Learning Objectives</a></li>
-<li><a class="reference internal" href="#2.3.1-Introduction">2.3.1-Introduction</a></li>
-<li><a class="reference internal" href="#2.3.2-Problem-statement">2.3.2-Problem statement</a></li>
-<li><a class="reference internal" href="#2.3.3-Solving-using-the-molecular-species-balance">2.3.3-Solving using the molecular species balance</a></li>
-<li><a class="reference internal" href="#2.3.4-Solving-using-the-Atomic-species-balance">2.3.4-Solving using the Atomic species balance</a></li>
+<li><a class="reference internal" href="#">2.3 – Solving Reactive Balances In-depth</a><ul>
+<li><a class="reference internal" href="#2.3.0-–-Learning-Objectives">2.3.0 – Learning Objectives</a></li>
+<li><a class="reference internal" href="#2.3.2-–-Problem-statement">2.3.2 – Problem statement</a></li>
+<li><a class="reference internal" href="#2.3.3-–-Solving-using-the-molecular-species-balance">2.3.3 – Solving using the molecular species balance</a></li>
+<li><a class="reference internal" href="#2.3.4-–-Solving-using-the-Atomic-species-balance">2.3.4 – Solving using the Atomic species balance</a></li>
 </ul>
 </li>
 </ul>

@@ -241,7 +241,7 @@ to acid-base titrations. Therefore, we can use the general balance
 equation:</p>
 <div class="math">
 \[Accumulation = Input + Generation - Output - Consumption\]</div>
-<p>The units of the general mass balance is in units per time
+<p>The units of the general mass balance are in units per time
 <span class="math">\(\frac{unit}{s}\)</span></p>
 </div>
 <div class="section" id="1.8.4-–-Balances-on-Continuous-Steady-State-Processes">
@@ -259,10 +259,12 @@ simplifies to:</p>
 <div class="math">
 \[input = output\]</div>
 </div>
-<div class="section" id="1.8.6-–-Problem-1">
-<h2>1.8.6 – Problem 1<a class="headerlink" href="#1.8.6-–-Problem-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="1.8.6-–-Problem-Statement">
+<h2>1.8.6 – Problem Statement<a class="headerlink" href="#1.8.6-–-Problem-Statement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Problem-1">
+<h3>Problem 1<a class="headerlink" href="#Problem-1" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
 <p>One thousand kilograms per hour of a mixture of benzene (B) and toluene
 (T) containing 50% benzene by mass is separated by distillation into two
 fractions. The mass flow rate of benzene in the top stream is 450 kg B/h
@@ -274,12 +276,11 @@ at steady state. Solve for <span class="math">\(\dot{m}_1\)</span> and <span cla
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
 </div>
 <div class="section" id="Answer-by-hand">
-<h3>Answer by hand<a class="headerlink" href="#Answer-by-hand" title="Permalink to this headline">¶</a></h3>
+<h4>Answer by hand<a class="headerlink" href="#Answer-by-hand" title="Permalink to this headline">¶</a></h4>
 <p>Since we know that it is a continuous steady-state non-reactive process,
 we can use <span class="math">\(input = output\)</span>.</p>
-</div>
 <div class="section" id="1.-Toluene-Balance">
-<h3>1. Toluene Balance<a class="headerlink" href="#1.-Toluene-Balance" title="Permalink to this headline">¶</a></h3>
+<h5>1. Toluene Balance<a class="headerlink" href="#1.-Toluene-Balance" title="Permalink to this headline">¶</a></h5>
 <div class="math">
 \[500 \space kg \space T/h = 475 \space kg \space T/h + \dot{m}_1\]</div>
 <div class="math">
@@ -288,7 +289,7 @@ we can use <span class="math">\(input = output\)</span>.</p>
 \[\dot{m}_1   = 25 \space kg \space T/h\]</div>
 </div>
 <div class="section" id="2.-Benzene-Balance">
-<h3>2. Benzene Balance<a class="headerlink" href="#2.-Benzene-Balance" title="Permalink to this headline">¶</a></h3>
+<h5>2. Benzene Balance<a class="headerlink" href="#2.-Benzene-Balance" title="Permalink to this headline">¶</a></h5>
 <div class="math">
 \[500 \space kg \space B/h = 450 \space kg \space B/h + \dot{m}_2\]</div>
 <div class="math">
@@ -296,11 +297,12 @@ we can use <span class="math">\(input = output\)</span>.</p>
 <div class="math">
 \[\dot{m}_2   = 50 \space kg \space B/h\]</div>
 </div>
+</div>
 <div class="section" id="Answer-using-python">
-<h3>Answer using python<a class="headerlink" href="#Answer-using-python" title="Permalink to this headline">¶</a></h3>
+<h4>Answer using python<a class="headerlink" href="#Answer-using-python" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
-<span></span>In [1]:
+<span></span>In [3]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3"><div class="highlight"><pre>
@@ -313,7 +315,7 @@ T_out_known = 475
 m1 = T_in - T_out_known
 m2 = B_in - B_out_known
 
-print(&quot;m1 was found to be:&quot;, m1, &quot;kg/h \nm2 was found to be:&quot;, m2, &quot;kg/h&quot;)
+print(&quot;m1 is found to be:&quot;, m1, &quot;kg/h \nm2 is found to be:&quot;, m2, &quot;kg/h&quot;)
 </pre></div>
 </div>
 </div>
@@ -322,17 +324,16 @@ print(&quot;m1 was found to be:&quot;, m1, &quot;kg/h \nm2 was found to be:&quot
 </div>
 <div class="output_area docutils container">
 <div class="highlight"><pre>
-m1 was found to be: 25 kg/h
-m2 was found to be: 50 kg/h
+m1 is found to be: 25 kg/h
+m2 is found to be: 50 kg/h
 </pre></div></div>
 </div>
 </div>
 </div>
-<hr class="docutils" />
-<div class="section" id="1.8.7-–-Problem-2">
-<h2>1.8.7 – Problem 2<a class="headerlink" href="#1.8.7-–-Problem-2" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="Problem-2">
+<h3>Problem 2<a class="headerlink" href="#Problem-2" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="Question">
-<h3>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h3>
+<h4>Question<a class="headerlink" href="#Question" title="Permalink to this headline">¶</a></h4>
 <p>Two methanol–water mixtures are contained in separate flasks. The first
 mixture contains 40.0 wt% methanol, and the second contains 70.0 wt%
 methanol. If 200 g of the first mixture is combined with 150 g of the
@@ -343,12 +344,11 @@ second, what are the mass and composition of the product?</p>
 (<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>)]</p>
 </div>
 <div class="section" id="Answer-by-hand">
-<h3>Answer by hand<a class="headerlink" href="#Answer-by-hand" title="Permalink to this headline">¶</a></h3>
+<h4>Answer by hand<a class="headerlink" href="#Answer-by-hand" title="Permalink to this headline">¶</a></h4>
 <p>Since we know this is a batch non-reactive balance, we can use
 <span class="math">\(initial \space input = final \space output\)</span></p>
-</div>
 <div class="section" id="1.-Overall-Balance">
-<h3>1. Overall Balance<a class="headerlink" href="#1.-Overall-Balance" title="Permalink to this headline">¶</a></h3>
+<h5>1. Overall Balance<a class="headerlink" href="#1.-Overall-Balance" title="Permalink to this headline">¶</a></h5>
 <div class="math">
 \[m_1 = 200 \space g\]</div>
 <div class="math">
@@ -357,7 +357,7 @@ second, what are the mass and composition of the product?</p>
 \[m_3 = m_1 + m_2 = (200 + 150) \space g = 350 \space g\]</div>
 </div>
 <div class="section" id="2.--Balance">
-<h3>2. <span class="math">\(C H_3 O H\)</span> Balance<a class="headerlink" href="#2.--Balance" title="Permalink to this headline">¶</a></h3>
+<h5>2. <span class="math">\(C H_3 O H\)</span> Balance<a class="headerlink" href="#2.--Balance" title="Permalink to this headline">¶</a></h5>
 <div class="math">
 \[m_3 \cdot x_{3, \space C H_3 O H} = m_1 \cdot x_{1, \space C H_3 O H} + m_2 \cdot x_{2, \space C H_3 O H}\]</div>
 <div class="math">
@@ -370,16 +370,17 @@ second, what are the mass and composition of the product?</p>
 balance</p>
 </div>
 <div class="section" id="3.--Balance">
-<h3>3. <span class="math">\(H_2 O\)</span> Balance<a class="headerlink" href="#3.--Balance" title="Permalink to this headline">¶</a></h3>
+<h5>3. <span class="math">\(H_2 O\)</span> Balance<a class="headerlink" href="#3.--Balance" title="Permalink to this headline">¶</a></h5>
 <div class="math">
 \[m_1 \cdot x_{1, \space H_2 O } + m_2 \cdot x_{2, \space H_2 O } = m_3 \cdot x_{3, \space H_2 O }\]</div>
 <div class="math">
 \[(200)(0.600) + (150)(0.300) = (350)(0.471)\]</div>
 <div class="math">
-\[165 \space g \space H_2 O =  165 \space g \space H_2 O\]</div>
+\[165 \space g \space H_2 O = 165 \space g \space H_2 O\]</div>
+</div>
 </div>
 <div class="section" id="Answer-using-python">
-<h3>Answer using python<a class="headerlink" href="#Answer-using-python" title="Permalink to this headline">¶</a></h3>
+<h4>Answer using python<a class="headerlink" href="#Answer-using-python" title="Permalink to this headline">¶</a></h4>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none"><div class="highlight"><pre>
 <span></span>In [2]:
@@ -425,6 +426,7 @@ x3_H20 = 0.4714285714285714
 </div>
 </div>
 </div>
+</div>
 
 
           </div>
@@ -439,21 +441,28 @@ x3_H20 = 0.4714285714285714
 <li><a class="reference internal" href="#1.8.1-–-Introduction">1.8.1 – Introduction</a></li>
 <li><a class="reference internal" href="#1.8.2-–-The-Law-of-Conservation-of-Mass">1.8.2 – The Law of Conservation of Mass</a></li>
 <li><a class="reference internal" href="#1.8.4-–-Balances-on-Continuous-Steady-State-Processes">1.8.4 – Balances on Continuous Steady-State Processes</a></li>
-<li><a class="reference internal" href="#1.8.6-–-Problem-1">1.8.6 – Problem 1</a><ul>
+<li><a class="reference internal" href="#1.8.6-–-Problem-Statement">1.8.6 – Problem Statement</a><ul>
+<li><a class="reference internal" href="#Problem-1">Problem 1</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
-<li><a class="reference internal" href="#Answer-by-hand">Answer by hand</a></li>
+<li><a class="reference internal" href="#Answer-by-hand">Answer by hand</a><ul>
 <li><a class="reference internal" href="#1.-Toluene-Balance">1. Toluene Balance</a></li>
 <li><a class="reference internal" href="#2.-Benzene-Balance">2. Benzene Balance</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#Answer-using-python">Answer using python</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#1.8.7-–-Problem-2">1.8.7 – Problem 2</a><ul>
+<li><a class="reference internal" href="#Problem-2">Problem 2</a><ul>
 <li><a class="reference internal" href="#Question">Question</a></li>
-<li><a class="reference internal" href="#Answer-by-hand">Answer by hand</a></li>
+<li><a class="reference internal" href="#Answer-by-hand">Answer by hand</a><ul>
 <li><a class="reference internal" href="#1.-Overall-Balance">1. Overall Balance</a></li>
 <li><a class="reference internal" href="#2.--Balance">2. <span class="math">\(C H_3 O H\)</span> Balance</a></li>
 <li><a class="reference internal" href="#3.--Balance">3. <span class="math">\(H_2 O\)</span> Balance</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#Answer-using-python">Answer using python</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
