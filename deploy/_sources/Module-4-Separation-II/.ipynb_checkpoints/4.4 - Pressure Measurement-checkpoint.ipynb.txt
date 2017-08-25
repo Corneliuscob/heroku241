@@ -97,7 +97,7 @@
     "\n",
     "An open-end manometer, shown below is used to measure the pressure of the stream. If $d_1 = 1.0 \\space m$ and $h = 0.7 \\space m$, what is the absolute pressure at $P_1$?\n",
     "\n",
-    "![](../figures/Module-4/PMprob.svg)\n",
+    "<img src=\"../figures/Module-4/PMprob.svg\" style= \"height:250px\">\n",
     "\n",
     "Attribution: Said Zaid-Alkailani & UBC [CC BY 4.0 de (https://creativecommons.org/licenses/by/4.0/)]\n",
     "\n",
