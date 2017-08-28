@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Unique Solution, No Solution, or Infinte Solutions &#8212; project1 1.0 documentation</title>
+    <title>Unique Solution, No Solution, or Infinite Solutions &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -204,8 +204,8 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="Unique-Solution,-No-Solution,-or-Infinte-Solutions">
-<h1>Unique Solution, No Solution, or Infinte Solutions<a class="headerlink" href="#Unique-Solution,-No-Solution,-or-Infinte-Solutions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Unique-Solution,-No-Solution,-or-Infinite-Solutions">
+<h1>Unique Solution, No Solution, or Infinite Solutions<a class="headerlink" href="#Unique-Solution,-No-Solution,-or-Infinite-Solutions" title="Permalink to this headline">¶</a></h1>
 <hr class="docutils" />
 <div class="section" id="Learning-Objectives">
 <h2>Learning Objectives<a class="headerlink" href="#Learning-Objectives" title="Permalink to this headline">¶</a></h2>
@@ -409,7 +409,7 @@ occur, the matrix is likely to have infinite solutions.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Unique Solution, No Solution, or Infinte Solutions</a><ul>
+<li><a class="reference internal" href="#">Unique Solution, No Solution, or Infinite Solutions</a><ul>
 <li><a class="reference internal" href="#Learning-Objectives">Learning Objectives</a></li>
 <li><a class="reference internal" href="#Unique-Solution">Unique Solution</a></li>
 <li><a class="reference internal" href="#No-solution">No solution</a></li>
@@ -445,20 +445,60 @@ occur, the matrix is likely to have infinite solutions.</p>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../../_sources/Module-0-Introduction/MATH-152/Unique Solution, No Solution, or Infinite Solutions.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
+<style type="text/css">
+    .scrollToTop {
+        text-align: center;
+        font-weight: bold;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        display: none;
+    }
+    .sphinxsidebarwrapper{
+        position: fixed;
+        overflow: hidden;
+        max-width: 240px;
+        height: 1000px;
+    }
+</style>
+<a href="#" class="scrollToTop">Scroll To Top</a>
+<script type="text/javascript">
+$(document).ready(function() {
+    //Check to see if the window is top if not then display button
+    // $('.sphinxsidebarwrapper').addClass("scrollWith");
 
-    
 
-    
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.scrollToTop').fadeIn();
+        } 
+        else {
+            $('.scrollToTop').fadeOut();
+        }
+        // if ($(this).scrollTop()>500) {
+        //     $('.sphinxsidebarwrapper').fadeOut();
+        // }
+        // else{
+        //     $('.sphinxsidebarwrapper').show();
+        // }
+    }); 
+    // $('.sphinxsidebarwrapper').hover(function(){
+        // $(this).fadeIn();
+    // });
+    //Click event to scroll to top
+    $('.scrollToTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+
+
+
+});
+</script>
+
   </body>
 </html>

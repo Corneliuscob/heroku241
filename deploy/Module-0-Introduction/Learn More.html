@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Learn More &#8212; project1 1.0 documentation</title>
+    <title>Learn More About Python &#8212; project1 1.0 documentation</title>
     
     <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -204,8 +204,8 @@ div.nboutput div.output_area.stderr {
 
 .ansi-bold { font-weight: bold; }
 </style>
-<div class="section" id="Learn-More">
-<h1>Learn More<a class="headerlink" href="#Learn-More" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="Learn-More-About-Python">
+<h1>Learn More About Python<a class="headerlink" href="#Learn-More-About-Python" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="Interactive-Learning">
 <h2>Interactive Learning<a class="headerlink" href="#Interactive-Learning" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="Codecademy">
@@ -258,7 +258,7 @@ Matplotlib is a plotting library that is very simmilar to matlab.</p>
         <div class="sphinxsidebarwrapper">
   <h3><a href="../index.html">Table Of Contents</a></h3>
   <ul>
-<li><a class="reference internal" href="#">Learn More</a><ul>
+<li><a class="reference internal" href="#">Learn More About Python</a><ul>
 <li><a class="reference internal" href="#Interactive-Learning">Interactive Learning</a><ul>
 <li><a class="reference internal" href="#Codecademy">Codecademy</a></li>
 </ul>
@@ -298,20 +298,60 @@ Matplotlib is a plotting library that is very simmilar to matlab.</p>
       </div>
       <div class="clearer"></div>
     </div>
-    <div class="footer">
-      &copy;2017, I2.
-      
-      |
-      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.5.6</a>
-      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.10</a>
-      
-      |
-      <a href="../_sources/Module-0-Introduction/Learn More.ipynb.txt"
-          rel="nofollow">Page source</a>
-    </div>
+<style type="text/css">
+    .scrollToTop {
+        text-align: center;
+        font-weight: bold;
+        position: fixed;
+        bottom: 5%;
+        right: 5%;
+        display: none;
+    }
+    .sphinxsidebarwrapper{
+        position: fixed;
+        overflow: hidden;
+        max-width: 240px;
+        height: 1000px;
+    }
+</style>
+<a href="#" class="scrollToTop">Scroll To Top</a>
+<script type="text/javascript">
+$(document).ready(function() {
+    //Check to see if the window is top if not then display button
+    // $('.sphinxsidebarwrapper').addClass("scrollWith");
 
-    
 
-    
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.scrollToTop').fadeIn();
+        } 
+        else {
+            $('.scrollToTop').fadeOut();
+        }
+        // if ($(this).scrollTop()>500) {
+        //     $('.sphinxsidebarwrapper').fadeOut();
+        // }
+        // else{
+        //     $('.sphinxsidebarwrapper').show();
+        // }
+    }); 
+    // $('.sphinxsidebarwrapper').hover(function(){
+        // $(this).fadeIn();
+    // });
+    //Click event to scroll to top
+    $('.scrollToTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+        return false;
+    });
+
+
+
+
+});
+</script>
+
   </body>
 </html>
