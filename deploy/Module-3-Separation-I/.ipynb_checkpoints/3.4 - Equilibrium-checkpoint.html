@@ -299,6 +299,12 @@ mass flow rates of <span class="math">\(m_1\)</span> and <span class="math">\(m_
         max-width: 240px;
         height: 1000px;
     }
+    .tocHover{
+        color:blue;
+    }
+    .toctree-wrapper h1{
+        font-size: 36px;
+    }
 </style>
 <a href="#" class="scrollToTop">Scroll To Top</a>
 <script type="text/javascript">
@@ -333,7 +339,7 @@ $(document).ready(function() {
         return false;
     });
 
-
+    $('a:contains("Table Of Contents")').addClass('tocHover');
 
 
 });
